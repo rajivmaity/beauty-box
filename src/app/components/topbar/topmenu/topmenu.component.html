@@ -1,0 +1,7 @@
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item" *ngFor="let menu of menus" [ngClass]="{'nav-item active': menu.state}"class="nav-item">
+    <a class="nav-link" style="cursor: pointer" (click)="navigateMenu(menu)">
+      <i class="fa fa-fw fa-{{ menu.fontAwesomeClass }}"></i> {{ menu.menuName }}
+    </a>
+  </li>
+</ul>

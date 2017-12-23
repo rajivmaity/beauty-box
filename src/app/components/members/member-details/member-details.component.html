@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col md-6">
+    <a routerLink="/members" href="" class="btn btn-link">
+      <i class="fa fa-arrow-circle-o-left"></i> Back
+    </a>
+  </div>
+  <div class="col-md-6">
+    <div class="btn-group pull-right">
+      <a [routerLink]="['../../../members/details/'+id+'/edit-members/'+id]" class="btn btn-dark">Edit</a>
+      <button class="btn btn-danger" (click)="onDeleteClick()">Delete</button>
+    </div>
+  </div>
+</div>
+<hr>
+<div *ngIf="member" class="card">
+  <h3 class="card-header">{{ member.name }}</h3>
+  <div class="card-body">
+    <div class="row">
+      <div class="col md-8">
+        <h4>Member ID: {{ member.id }}</h4>
+      </div>
+
+    </div>
+    <hr>
+    <ul class="list-group">
+      <li class="list-group-item">
+        Phone: {{ member.phone }}
+      </li>
+      <li class="list-group-item">
+        Email: {{ member.email }}
+      </li>
+      <li class="list-group-item">
+        Address: {{ member.address.street }}, {{ member.address.suite }}, {{ member.address.city }},
+      </li>
+    </ul>
+  </div>
+</div>

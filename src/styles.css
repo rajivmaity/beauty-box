@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #c22555 !important;
+    border-color: #c22555 !important;
+}
+.d-block {
+    color: #c22555 !important;
+}
+.form-check-input:focus {
+    color: #c22555 !important;
+    background-color: #c22555 !important;
+}
